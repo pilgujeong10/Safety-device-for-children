@@ -27,14 +27,14 @@ if (BTSerial.available()) {//조건문중 하나인 if문을 사용하였습니�
         digitalWrite(ledPin, HIGH); // LED ON
         if (pirState == LOW) {
         // 시리얼모니터에 메시지 출력
-        Serial.println("Motion detected!");
+        Serial.println("1");
         pirState = HIGH;
         }
     } else {
         digitalWrite(ledPin, LOW); // LED OFF
         if (pirState == HIGH){        
             // 시리얼모니터에 메시지 출력            
-            Serial.println("Motion ended!");
+            Serial.println("2");
             pirState = LOW;
         }
     }
